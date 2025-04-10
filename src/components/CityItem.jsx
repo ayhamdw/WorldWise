@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./CityItem.module.css";
+import Message from "./Message";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -10,6 +11,7 @@ const formatDate = (date) =>
 
 function CityItem({ city }) {
   const { cityName, emoji, date } = city;
+
   return (
     <li className={styles.cityItem}>
       <span className={styles.emoji}>{emoji}</span>

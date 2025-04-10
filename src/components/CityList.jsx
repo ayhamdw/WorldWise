@@ -2,8 +2,12 @@ import React from "react";
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
 import CityItem from "./CityItem";
+import Message from "./Message";
 function CityList({ cities, loading }) {
   if (loading) return <Spinner />;
+  if (!cities)
+    return <Message message="Add Your First City By clicking On The Map" />;
+
   return (
     <ul className={styles.cityList}>
       {cities.map((city) => (
