@@ -2,11 +2,24 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 
 const CitiesContext = createContext();
 
+const URL = `http://localhost:9000/cities`;
 function CitiesProvider({ children }) {
-  const URL = `http://localhost:9000/cities`;
-
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentCity, setCurrentCity] = useState("");
+
+  async function getCity(id) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${URL}/${id}`);
+      const data = await res.json();
+      setCurrentCity(data);
+    } catch (error) {
+      alert("There was an error loading data... ", error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   useEffect(() => {
     async function fetchCities() {
@@ -25,7 +38,7 @@ function CitiesProvider({ children }) {
   }, []);
 
   return (
-    <CitiesContext.Provider value={{ cities, isLoading }}>
+    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity }}>
       {children}
     </CitiesContext.Provider>
   );
