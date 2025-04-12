@@ -35,6 +35,18 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
+    },
+    {
+      "id": "821c",
+      "cityName": "Ramallah",
+      "country": "Palestine, State of",
+      "emoji": "🇵🇸",
+      "date": "2025-04-12T12:37:45.019Z",
+      "notes": "Eid Trip",
+      "position": {
+        "lat": "31.970803930433096",
+        "lng": "35.28808593750001"
+      }
     }
   ]
 }
