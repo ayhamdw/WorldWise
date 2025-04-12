@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 
 const CitiesContext = createContext();
 
-const URL = `http://localhost:9000/cities`;
+const URL = `https://worldwise-wysz.onrender.com/cities`;
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
