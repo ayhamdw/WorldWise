@@ -1,26 +1,88 @@
 .login {
   margin: 2.5rem;
   padding: 2.5rem 5rem;
-  background-color: var(--color-dark--1);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   min-height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .form {
-  background-color: var(--color-dark--2);
-  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
   padding: 2rem 3rem;
   width: 100%;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  /* Different from other form */
-  width: 48rem;
-  margin: 8rem auto;
+.form:hover {
+  transform: translateY(-5px);
 }
 
 .row {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: rgba(83, 81, 81, 0.6);
+}
+
+button {
+  padding: 0.75rem;
+  background: #4ade80;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #22c55e;
+}
+
+@media (max-width: 768px) {
+  .login {
+    padding: 1.5rem;
+  }
+
+  .form {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1.5rem;
+  }
+
+  input,
+  button {
+    font-size: 0.95rem;
+  }
 }

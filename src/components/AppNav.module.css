@@ -1,6 +1,9 @@
 .nav {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
 }
 
 .nav ul {
@@ -8,6 +11,8 @@
     display: flex;
     background-color: var(--color-dark--2);
     border-radius: 7px;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 
 .nav a:link,
