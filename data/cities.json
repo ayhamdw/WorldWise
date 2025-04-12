@@ -35,66 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "3104",
-      "cityName": "Hun",
-      "country": "Libya",
-      "emoji": "🇱🇾",
-      "date": "2025-04-12T12:15:02.707Z",
-      "notes": "dawad",
-      "position": {
-        "lat": "28.536274512989916",
-        "lng": "15.996093750000002"
-      }
-    },
-    {
-      "id": "e72a",
-      "cityName": "Nablus",
-      "country": "Palestine, State of",
-      "emoji": "🇵🇸",
-      "date": "2025-04-12T12:16:17.205Z",
-      "notes": "My lovely City",
-      "position": {
-        "lat": "32.175612478499346",
-        "lng": "35.32104492187501"
-      }
-    },
-    {
-      "id": "8539",
-      "cityName": "Mondilhan",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-04-12T12:18:17.674Z",
-      "notes": "test",
-      "position": {
-        "lat": "43.29320031385285",
-        "lng": "0.7250976562500001"
-      }
-    },
-    {
-      "id": "d607",
-      "cityName": "Verrie",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-04-12T12:21:14.232Z",
-      "notes": "Nice Trip",
-      "position": {
-        "lat": "47.279229002570844",
-        "lng": "-0.19775390625000003"
-      }
-    },
-    {
-      "id": "bb98",
-      "cityName": "Altenstadt",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2025-04-12T12:23:25.709Z",
-      "notes": "Very Greaat",
-      "position": {
-        "lat": "48.16608541901253",
-        "lng": "10.151367187500002"
-      }
     }
   ]
 }
