@@ -31,7 +31,7 @@ Built using React, CSS Modules, Node.js, Leaflet, and React Router.
 📦 Installation
 -----------------------------------------
 1. Clone the repository
-   git clone https://github.com/your-username/world-wise.git
+   git clone https://github.com/ayhamdw/world-wise.git
 
 2. Navigate into the project folder
    cd world-wise
